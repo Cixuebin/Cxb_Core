@@ -1,0 +1,370 @@
+﻿[
+  {
+    "ID": 1000,
+    "Name": "车身00",
+    "IsLocked": 0,
+    "Sprite": "Body00",
+    "Type": "AssembleParts",
+    "AssembleType": "Body"
+  },
+  {
+    "ID": 1001,
+    "Name": "车身01",
+    "IsLocked": 0,
+    "Sprite": "Body01",
+    "Type": "AssembleParts",
+    "AssembleType": "Body"
+  },
+  {
+    "ID": 1002,
+    "Name": "车身02",
+    "IsLocked": 0,
+    "Sprite": "Body02",
+    "Type": "AssembleParts",
+    "AssembleType": "Body"
+  },
+  {
+    "ID": 1003,
+    "Name": "车身03",
+    "IsLocked": 1,
+    "Sprite": "Body03",
+    "Type": "AssembleParts",
+    "AssembleType": "Body"
+  },
+  {
+    "ID": 1004,
+    "Name": "车身04",
+    "IsLocked": 1,
+    "Sprite": "Body04",
+    "Type": "AssembleParts",
+    "AssembleType": "Body"
+  },
+  {
+    "ID": 1005,
+    "Name": "车身05",
+    "IsLocked": 1,
+    "Sprite": "Body05",
+    "Type": "AssembleParts",
+    "AssembleType": "Body"
+  },
+  {
+    "ID": 1006,
+    "Name": "车身06",
+    "IsLocked": 1,
+    "Sprite": "Body06",
+    "Type": "AssembleParts",
+    "AssembleType": "Body"
+  },
+  {
+    "ID": 1007,
+    "Name": "车身07",
+    "IsLocked": 1,
+    "Sprite": "Body07",
+    "Type": "AssembleParts",
+    "AssembleType": "Body"
+  },
+  {
+    "ID": 1008,
+    "Name": "车身08",
+    "IsLocked": 1,
+    "Sprite": "Body08",
+    "Type": "AssembleParts",
+    "AssembleType": "Body"
+  },
+  {
+    "ID": 1009,
+    "Name": "车身09",
+    "IsLocked": 1,
+    "Sprite": "Body09",
+    "Type": "AssembleParts",
+    "AssembleType": "Body"
+  },
+  {
+    "ID": 2000,
+    "Name": "车轮00",
+    "IsLocked": 0,
+    "Sprite": "Wheel00",
+    "Type": "AssembleParts",
+    "AssembleType": "Whell"
+  },
+  {
+    "ID": 2001,
+    "Name": "车轮01",
+    "IsLocked": 0,
+    "Sprite": "Wheel01",
+    "Type": "AssembleParts",
+    "AssembleType": "Whell"
+  },
+  {
+    "ID": 2002,
+    "Name": "车轮02",
+    "IsLocked": 0,
+    "Sprite": "Wheel02",
+    "Type": "AssembleParts",
+    "AssembleType": "Whell"
+  },
+  {
+    "ID": 2003,
+    "Name": "车轮03",
+    "IsLocked": 1,
+    "Sprite": "Wheel03",
+    "Type": "AssembleParts",
+    "AssembleType": "Whell"
+  },
+  {
+    "ID": 2004,
+    "Name": "车轮04",
+    "IsLocked": 1,
+    "Sprite": "Wheel04",
+    "Type": "AssembleParts",
+    "AssembleType": "Whell"
+  },
+  {
+    "ID": 2005,
+    "Name": "车轮05",
+    "IsLocked": 1,
+    "Sprite": "Wheel05",
+    "Type": "AssembleParts",
+    "AssembleType": "Whell"
+  },
+  {
+    "ID": 2006,
+    "Name": "车轮06",
+    "IsLocked": 1,
+    "Sprite": "Wheel06",
+    "Type": "AssembleParts",
+    "AssembleType": "Whell"
+  },
+  {
+    "ID": 2007,
+    "Name": "车轮07",
+    "IsLocked": 1,
+    "Sprite": "Wheel07",
+    "Type": "AssembleParts",
+    "AssembleType": "Whell"
+  },
+  {
+    "ID": 2008,
+    "Name": "车轮08",
+    "IsLocked": 1,
+    "Sprite": "Wheel08",
+    "Type": "AssembleParts",
+    "AssembleType": "Whell"
+  },
+  {
+    "ID": 2009,
+    "Name": "车轮09",
+    "IsLocked": 1,
+    "Sprite": "Wheel09",
+    "Type": "AssembleParts",
+    "AssembleType": "Whell"
+  },
+  {
+    "ID": 3000,
+    "Name": "第一机械臂00",
+    "IsLocked": 0,
+    "Sprite": "Arm00",
+    "Type": "AssembleParts",
+    "AssembleType": "Arm"
+  },
+  {
+    "ID": 3001,
+    "Name": "第一机械臂01",
+    "IsLocked": 0,
+    "Sprite": "Arm01",
+    "Type": "AssembleParts",
+    "AssembleType": "Arm"
+  },
+  {
+    "ID": 3002,
+    "Name": "第一机械臂02",
+    "IsLocked": 0,
+    "Sprite": "Arm02",
+    "Type": "AssembleParts",
+    "AssembleType": "Arm"
+  },
+  {
+    "ID": 3003,
+    "Name": "第一机械臂03",
+    "IsLocked": 1,
+    "Sprite": "Arm03",
+    "Type": "AssembleParts",
+    "AssembleType": "Arm"
+  },
+  {
+    "ID": 3004,
+    "Name": "第一机械臂04",
+    "IsLocked": 1,
+    "Sprite": "Arm04",
+    "Type": "AssembleParts",
+    "AssembleType": "Arm"
+  },
+  {
+    "ID": 3005,
+    "Name": "第一机械臂05",
+    "IsLocked": 1,
+    "Sprite": "Arm05",
+    "Type": "AssembleParts",
+    "AssembleType": "Arm"
+  },
+  {
+    "ID": 3006,
+    "Name": "第一机械臂06",
+    "IsLocked": 1,
+    "Sprite": "Arm06",
+    "Type": "AssembleParts",
+    "AssembleType": "Arm"
+  },
+  {
+    "ID": 3007,
+    "Name": "第一机械臂07",
+    "IsLocked": 1,
+    "Sprite": "Arm07",
+    "Type": "AssembleParts",
+    "AssembleType": "Arm"
+  },
+  {
+    "ID": 3008,
+    "Name": "第一机械臂08",
+    "IsLocked": 1,
+    "Sprite": "Arm08",
+    "Type": "AssembleParts",
+    "AssembleType": "Arm"
+  },
+  {
+    "ID": 3009,
+    "Name": "第一机械臂09",
+    "IsLocked": 1,
+    "Sprite": "Arm09",
+    "Type": "AssembleParts",
+    "AssembleType": "Arm"
+  },
+  {
+    "ID": 4000,
+    "Name": "第二机械臂00",
+    "IsLocked": 0,
+    "Sprite": "SArm00",
+    "Type": "AssembleParts",
+    "AssembleType": "SArm"
+  },
+  {
+    "ID": 4001,
+    "Name": "第二机械臂01",
+    "IsLocked": 0,
+    "Sprite": "SArm01",
+    "Type": "AssembleParts",
+    "AssembleType": "SArm"
+  },
+  {
+    "ID": 4002,
+    "Name": "第二机械臂02",
+    "IsLocked": 0,
+    "Sprite": "SArm02",
+    "Type": "AssembleParts",
+    "AssembleType": "SArm"
+  },
+  {
+    "ID": 4003,
+    "Name": "第二机械臂03",
+    "IsLocked": 1,
+    "Sprite": "SArm03",
+    "Type": "AssembleParts",
+    "AssembleType": "SArm"
+  },
+  {
+    "ID": 4004,
+    "Name": "第二机械臂04",
+    "IsLocked": 1,
+    "Sprite": "SArm04",
+    "Type": "AssembleParts",
+    "AssembleType": "SArm"
+  },
+  {
+    "ID": 4005,
+    "Name": "第二机械臂05",
+    "IsLocked": 1,
+    "Sprite": "SArm05",
+    "Type": "AssembleParts",
+    "AssembleType": "SArm"
+  },
+  {
+    "ID": 4006,
+    "Name": "第二机械臂06",
+    "IsLocked": 1,
+    "Sprite": "SArm06",
+    "Type": "AssembleParts",
+    "AssembleType": "SArm"
+  },
+  {
+    "ID": 4007,
+    "Name": "第二机械臂07",
+    "IsLocked": 1,
+    "Sprite": "SArm07",
+    "Type": "AssembleParts",
+    "AssembleType": "SArm"
+  },
+  {
+    "ID": 4008,
+    "Name": "第二机械臂08",
+    "IsLocked": 1,
+    "Sprite": "SArm08",
+    "Type": "AssembleParts",
+    "AssembleType": "SArm"
+  },
+  {
+    "ID": 4009,
+    "Name": "第二机械臂09",
+    "IsLocked": 1,
+    "Sprite": "SArm09",
+    "Type": "AssembleParts",
+    "AssembleType": "SArm"
+  },
+  {
+    "ID": 5000,
+    "Name": "挖斗00",
+    "IsLocked": 0,
+    "Sprite": "Bucket00",
+    "Type": "AssembleParts",
+    "AssembleType": "Bucket"
+  },
+  {
+    "ID": 5001,
+    "Name": "挖斗01",
+    "IsLocked": 0,
+    "Sprite": "Bucket01",
+    "Type": "AssembleParts",
+    "AssembleType": "Bucket"
+  },
+  {
+    "ID": 5002,
+    "Name": "挖斗02",
+    "IsLocked": 1,
+    "Sprite": "Bucket02",
+    "Type": "AssembleParts",
+    "AssembleType": "Bucket"
+  },
+  {
+    "ID": 5003,
+    "Name": "挖斗03",
+    "IsLocked": 1,
+    "Sprite": "Bucket03",
+    "Type": "AssembleParts",
+    "AssembleType": "Bucket"
+  },
+  {
+    "ID": 5004,
+    "Name": "挖斗04",
+    "IsLocked": 1,
+    "Sprite": "Bucket04",
+    "Type": "AssembleParts",
+    "AssembleType": "Bucket"
+  },
+  {
+    "ID": 5005,
+    "Name": "挖斗05",
+    "IsLocked": 1,
+    "Sprite": "Bucket05",
+    "Type": "AssembleParts",
+    "AssembleType": "Bucket"
+  }
+]

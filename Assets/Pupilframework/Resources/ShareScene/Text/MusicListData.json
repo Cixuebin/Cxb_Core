@@ -1,0 +1,842 @@
+﻿[
+  {
+    "Name": "小星星",
+    "Author": "民谣",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 33,
+    "LockType": 0
+  },
+  {
+    "Name": "月光",
+    "Author": "Ludwig van Beethoven",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 81,
+    "LockType": 0
+  },
+  {
+    "Name": "遇见",
+    "Author": "孙燕姿",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 55,
+    "LockType": 0
+  },
+  {
+    "Name": "雨的印忆",
+    "Author": "李闰珉",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 66,
+    "LockType": 0
+  },
+  {
+    "Name": "忧伤还是快乐",
+    "Author": "July",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 65,
+    "LockType": 0
+  },
+  {
+    "Name": "隐形的翅膀",
+    "Author": "张韶涵",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 69,
+    "LockType": 0
+  },
+  {
+    "Name": "因为爱情",
+    "Author": "陈奕迅",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 55,
+    "LockType": 0
+  },
+  {
+    "Name": "夜的钢琴曲(五)",
+    "Author": "石进",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 68,
+    "LockType": 0
+  },
+  {
+    "Name": "杨柳",
+    "Author": "范宗沛",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 55,
+    "LockType": 0
+  },
+  {
+    "Name": "雪之梦",
+    "Author": "Bandari",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 75,
+    "LockType": 0
+  },
+  {
+    "Name": "雪之花",
+    "Author": "中岛美嘉",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 56,
+    "LockType": 0
+  },
+  {
+    "Name": "星空のメモリア",
+    "Author": "茶太",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 49,
+    "LockType": 0
+  },
+  {
+    "Name": "笑忘书",
+    "Author": "王菲",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 82,
+    "LockType": 0
+  },
+  {
+    "Name": "微笑pasta",
+    "Author": "王心凌",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 60,
+    "LockType": 0
+  },
+  {
+    "Name": "亡灵序曲",
+    "Author": "Roger",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 60,
+    "LockType": 0
+  },
+  {
+    "Name": "天空之城",
+    "Author": "久石让",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 74,
+    "LockType": 0
+  },
+  {
+    "Name": "神秘园之歌",
+    "Author": "Secret Garden",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 83,
+    "LockType": 0
+  },
+  {
+    "Name": "美丽的神话",
+    "Author": "韩红",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 60,
+    "LockType": 0
+  },
+  {
+    "Name": "日光海岸",
+    "Author": "Bandari",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 59,
+    "LockType": 0
+  },
+  {
+    "Name": "秋日私语",
+    "Author": "Richard Clayderman",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 59,
+    "LockType": 0
+  },
+  {
+    "Name": "千与千寻",
+    "Author": "久石让",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 50,
+    "LockType": 0
+  },
+  {
+    "Name": "棋魂",
+    "Author": "Dream",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 83,
+    "LockType": 0
+  },
+  {
+    "Name": "蒲公英的约定",
+    "Author": "周杰伦",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 57,
+    "LockType": 0
+  },
+  {
+    "Name": "鸟之诗",
+    "Author": "高濑一矢",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 40,
+    "LockType": 0
+  },
+  {
+    "Name": "暖暖",
+    "Author": "梁静茹",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 64,
+    "LockType": 0
+  },
+  {
+    "Name": "念你",
+    "Author": "刘子千",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 54,
+    "LockType": 0
+  },
+  {
+    "Name": "命运",
+    "Author": "Richard Clayderman",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 67,
+    "LockType": 0
+  },
+  {
+    "Name": "梦中的婚礼",
+    "Author": "Richard Clayderman",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 62,
+    "LockType": 0
+  },
+  {
+    "Name": "涟漪",
+    "Author": "Lawrence",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 86,
+    "LockType": 0
+  },
+  {
+    "Name": "卡农",
+    "Author": "Johann Pachelbel",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 62,
+    "LockType": 0
+  },
+  {
+    "Name": "菊次郎的夏天",
+    "Author": "久石让",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 68,
+    "LockType": 0
+  },
+  {
+    "Name": "记得",
+    "Author": "rain",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 72,
+    "LockType": 0
+  },
+  {
+    "Name": "火宵之月",
+    "Author": "久石让",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 89,
+    "LockType": 0
+  },
+  {
+    "Name": "欢乐颂",
+    "Author": "Ludwig van Beethoven",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 43,
+    "LockType": 0
+  },
+  {
+    "Name": "荷塘月色",
+    "Author": "凤凰传奇",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 61,
+    "LockType": 0
+  },
+  {
+    "Name": "风居住的街道",
+    "Author": "矶村由纪子",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 68,
+    "LockType": 0
+  },
+  {
+    "Name": "愤怒的小鸟",
+    "Author": "游戏主题曲",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 30,
+    "LockType": 0
+  },
+  {
+    "Name": "粉刷匠",
+    "Author": "儿歌",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 27,
+    "LockType": 0
+  },
+  {
+    "Name": "稻香",
+    "Author": "周杰伦",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 75,
+    "LockType": 0
+  },
+  {
+    "Name": "打上花火",
+    "Author": "米津玄师",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 85,
+    "LockType": 0
+  },
+  {
+    "Name": "初雪",
+    "Author": "Bandari",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 51,
+    "LockType": 0
+  },
+  {
+    "Name": "北京欢迎你",
+    "Author": "小柯",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 93,
+    "LockType": 0
+  },
+  {
+    "Name": "爱的协奏曲",
+    "Author": "Richard Clayderman",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 41,
+    "LockType": 0
+  },
+  {
+    "Name": "アシタカとサン",
+    "Author": "久石让",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 63,
+    "LockType": 0
+  },
+  {
+    "Name": "The Truth That You Leave",
+    "Author": "Pianoboy",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 50,
+    "LockType": 0
+  },
+  {
+    "Name": "Tear",
+    "Author": "Renodia",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 69,
+    "LockType": 0
+  },
+  {
+    "Name": "Suddenly",
+    "Author": "金宝京",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 64,
+    "LockType": 0
+  },
+  {
+    "Name": "River Flows In You",
+    "Author": "李闰珉",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 82,
+    "LockType": 0
+  },
+  {
+    "Name": "One Summer’s Day",
+    "Author": "久石让",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 55,
+    "LockType": 0
+  },
+  {
+    "Name": "Sadness and Sorrow",
+    "Author": "高梨康治",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 76,
+    "LockType": 0
+  },
+  {
+    "Name": "Merry Christmas Mr.Lawrence",
+    "Author": "坂本龍一",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 75,
+    "LockType": 0
+  },
+  {
+    "Name": "Lost Warmth",
+    "Author": "久石让",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 50,
+    "LockType": 0
+  },
+  {
+    "Name": "Lemon",
+    "Author": "米津玄师",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 51,
+    "LockType": 0
+  },
+  {
+    "Name": "Kiss The Rain",
+    "Author": "YIRUMA",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 60,
+    "LockType": 0
+  },
+  {
+    "Name": "Jesu Joy Of Man's Desiring",
+    "Author": "Johann Sebastian Bach",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 39,
+    "LockType": 0
+  },
+  {
+    "Name": "Happy Birthday",
+    "Author": "民谣",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 48,
+    "LockType": 0
+  },
+  {
+    "Name": "Goodbye",
+    "Author": "Jan A.P. Kaczmarek",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 50,
+    "LockType": 0
+  },
+  {
+    "Name": "致爱丽丝",
+    "Author": "Ludwig van Beethoven",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 78,
+    "LockType": 0
+  },
+  {
+    "Name": "Flower Dance",
+    "Author": "Dj Okawari",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 40,
+    "LockType": 0
+  },
+  {
+    "Name": "Christmas In The 13th Month",
+    "Author": "《僵尸新娘》主题曲",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 65,
+    "LockType": 0
+  },
+  {
+    "Name": "Childhood Memory",
+    "Author": "热田公纪",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 76,
+    "LockType": 0
+  },
+  {
+    "Name": "Apologize",
+    "Author": "Timothy Zachery Mosley",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 75,
+    "LockType": 0
+  },
+  {
+    "Name": "夜的钢琴曲(八)",
+    "Author": "石进",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 46,
+    "LockType": 0
+  },
+  {
+    "Name": "小夜曲",
+    "Author": "海顿",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 80,
+    "LockType": 0
+  },
+  {
+    "Name": "小酒窝",
+    "Author": "林俊杰",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 86,
+    "LockType": 0
+  },
+  {
+    "Name": "少女的祈祷",
+    "Author": "巴达捷芙斯卡",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 43,
+    "LockType": 0
+  },
+  {
+    "Name": "森林狂想曲",
+    "Author": "吴金黛",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 44,
+    "LockType": 0
+  },
+  {
+    "Name": "秘密的庭院",
+    "Author": "Richard Clayderman",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 58,
+    "LockType": 0
+  },
+  {
+    "Name": "梁祝",
+    "Author": "何占豪",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 87,
+    "LockType": 0
+  },
+  {
+    "Name": "罗密欧与朱丽叶",
+    "Author": "Richard Clayderman",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 60,
+    "LockType": 0
+  },
+  {
+    "Name": "蓝色的爱",
+    "Author": "Richard Clayderman",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 65,
+    "LockType": 0
+  },
+  {
+    "Name": "海边的祈祷",
+    "Author": "Richard Clayderman",
+    "Type": 2,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 40,
+    "LockType": 0
+  },
+  {
+    "Name": "Annie's Wonderland",
+    "Author": "Bandari",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 78,
+    "LockType": 0
+  },
+  {
+    "Name": "Love Story",
+    "Author": "Francis Lai",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 67,
+    "LockType": 0
+  },
+  {
+    "Name": "安静",
+    "Author": "周杰伦",
+    "Type": 3,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 52,
+    "LockType": 0
+  },
+  {
+    "Name": "白龙马",
+    "Author": "儿歌",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 62,
+    "LockType": 0
+  },
+  {
+    "Name": "读书郎",
+    "Author": "儿歌",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 35,
+    "LockType": 0
+  },
+  {
+    "Name": "四季歌",
+    "Author": "儿歌",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 50,
+    "LockType": 0
+  },
+  {
+    "Name": "天黑黑",
+    "Author": "民歌",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 42,
+    "LockType": 0
+  },
+  {
+    "Name": "童年",
+    "Author": "罗大佑",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 52,
+    "LockType": 0
+  },
+  {
+    "Name": "小红帽",
+    "Author": "儿歌",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 54,
+    "LockType": 0
+  },
+  {
+    "Name": "小兔子乖乖",
+    "Author": "儿歌",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 26,
+    "LockType": 0
+  },
+  {
+    "Name": "月亮代表我的心",
+    "Author": "邓丽君",
+    "Type": 4,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 40,
+    "LockType": 0
+  },
+  {
+    "Name": "极乐净土",
+    "Author": "水桥舞",
+    "Type": 1,
+    "Level": 1,
+    "Hot": 0,
+    "Score": 0,
+    "MusicTime": 55,
+    "LockType": 0
+  }
+]

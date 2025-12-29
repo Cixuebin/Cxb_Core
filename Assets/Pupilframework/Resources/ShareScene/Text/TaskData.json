@@ -1,0 +1,72 @@
+﻿[
+    {
+        "ID": 7001, 
+        "Name": "消灭怪物", 
+        "Caption": "击杀小怪(0/10)", 
+        "Condition": "ID:Enemy/TargetAmount:10/IsFinished:0", 
+        "Reward": "ID:Gold/Amount:10000"
+    }, 
+    {
+        "ID": 7002, 
+        "Name": "参与挑战击杀Boss", 
+        "Caption": "挑战Boss(0/7)", 
+        "Condition": "ID:Boss/TargetAmount:7/IsFinished:0", 
+        "Reward": "ID:Ticket/Amount:100"
+    }, 
+    {
+        "ID": 7003, 
+        "Name": "消灭怪物", 
+        "Caption": "击杀小怪(0/11)", 
+        "Condition": "ID:Boss/TargetAmount:7/IsFinished:1", 
+        "Reward": "ID:Ticket/Amount:101"
+    }, 
+    {
+        "ID": 7004, 
+        "Name": "消灭怪物", 
+        "Caption": "挑战Boss(0/8)", 
+        "Condition": "ID:Boss/TargetAmount:7/IsFinished:2", 
+        "Reward": "ID:Ticket/Amount:102"
+    }, 
+    {
+        "ID": 7005, 
+        "Name": "消灭怪物", 
+        "Caption": "击杀小怪(0/12)", 
+        "Condition": "ID:Boss/TargetAmount:7/IsFinished:3", 
+        "Reward": "ID:Ticket/Amount:103"
+    }, 
+    {
+        "ID": 7006, 
+        "Name": "消灭怪物", 
+        "Caption": "挑战Boss(0/9)", 
+        "Condition": "ID:Boss/TargetAmount:7/IsFinished:4", 
+        "Reward": "ID:Ticket/Amount:104"
+    }, 
+    {
+        "ID": 7007, 
+        "Name": "消灭怪物", 
+        "Caption": "击杀小怪(0/13)", 
+        "Condition": "ID:Boss/TargetAmount:7/IsFinished:5", 
+        "Reward": "ID:Ticket/Amount:105"
+    }, 
+    {
+        "ID": 7008, 
+        "Name": "消灭怪物", 
+        "Caption": "挑战Boss(0/10)", 
+        "Condition": "ID:Boss/TargetAmount:7/IsFinished:6", 
+        "Reward": "ID:Ticket/Amount:106"
+    }, 
+    {
+        "ID": 7009, 
+        "Name": "消灭怪物", 
+        "Caption": "击杀小怪(0/14)", 
+        "Condition": "ID:Boss/TargetAmount:7/IsFinished:7", 
+        "Reward": "ID:Ticket/Amount:107"
+    }, 
+    {
+        "ID": 7010, 
+        "Name": "消灭怪物", 
+        "Caption": "挑战Boss(0/11)", 
+        "Condition": "ID:Boss/TargetAmount:7/IsFinished:8", 
+        "Reward": "ID:Ticket/Amount:108"
+    }
+]

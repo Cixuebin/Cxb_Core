@@ -1,0 +1,74 @@
+﻿[
+  {
+    "ID": 1001,
+    "Name": "生命药水",
+    "Capacity": 10,
+    "Description": "立刻回复10点生命",
+    "Type": "Consumable",
+    "Quality": "Common",
+    "Rank": 1,
+    "BuyPrice": 10,
+    "SellPrice": 5,
+    "Sprite": "shop_yao_05"
+  },
+  {
+    "ID": 1002,
+    "Name": "法力药水",
+    "Capacity": 5,
+    "Description": "立刻回复20点蓝量",
+    "Type": "Consumable",
+    "Quality": "Common",
+    "Rank": 1,
+    "BuyPrice": 11,
+    "SellPrice": 6,
+    "Sprite": "shop_yao_03"
+  },
+  {
+    "ID": 1003,
+    "Name": "能量药水",
+    "Capacity": 6,
+    "Description": "立刻回复5点能量",
+    "Type": "Consumable",
+    "Quality": "Common",
+    "Rank": 1,
+    "BuyPrice": 12,
+    "SellPrice": 7,
+    "Sprite": "shop_yao_06"
+  },
+  {
+    "ID": 1004,
+    "Name": "恢复药水",
+    "Capacity": 7,
+    "Description": "每秒回复2点生命,3点蓝量,持续10秒",
+    "Type": "Consumable",
+    "Quality": "Common",
+    "Rank": 1,
+    "BuyPrice": 13,
+    "SellPrice": 8,
+    "Sprite": "shop_yao_04"
+  },
+  {
+    "ID": 1005,
+    "Name": "暴怒药水",
+    "Capacity": 4,
+    "Description": "攻击力提升2倍,持续两个回合",
+    "Type": "Consumable",
+    "Quality": "Common",
+    "Rank": 1,
+    "BuyPrice": 14,
+    "SellPrice": 9,
+    "Sprite": "shop_yao_01"
+  },
+  {
+    "ID": 1006,
+    "Name": "急速药水",
+    "Capacity": 8,
+    "Description": "攻击速度提升2倍,持续10秒",
+    "Type": "Consumable",
+    "Quality": "Common",
+    "Rank": 1,
+    "BuyPrice": 15,
+    "SellPrice": 10,
+    "Sprite": "shop_yao_00"
+  }
+]

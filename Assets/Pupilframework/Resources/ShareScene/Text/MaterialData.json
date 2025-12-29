@@ -1,0 +1,50 @@
+﻿[
+  {
+    "ID": 2001,
+    "Name": "水晶石",
+    "Capacity": 30,
+    "Description": "透明晶体",
+    "Type": "Material",
+    "Quality": "Common",
+    "Rank": 1,
+    "BuyPrice": 111,
+    "SellPrice": 50,
+    "Sprite": "zb_wuqi00"
+  },
+  {
+    "ID": 2002,
+    "Name": "白晶体",
+    "Capacity": 100,
+    "Description": "满大街都是的垃圾",
+    "Type": "Material",
+    "Quality": "Common",
+    "Rank": 1,
+    "BuyPrice": 112,
+    "SellPrice": 51,
+    "Sprite": "zb_jia04"
+  },
+  {
+    "ID": 2003,
+    "Name": "钻石",
+    "Capacity": 70,
+    "Description": "女人的真爱",
+    "Type": "Material",
+    "Quality": "Rare",
+    "Rank": 1,
+    "BuyPrice": 113,
+    "SellPrice": 52,
+    "Sprite": "zb_sp00"
+  },
+  {
+    "ID": 2004,
+    "Name": "氪石",
+    "Capacity": 10,
+    "Description": "超人的亲爹",
+    "Type": "Material",
+    "Quality": "Epic",
+    "Rank": 1,
+    "BuyPrice": 114,
+    "SellPrice": 53,
+    "Sprite": "shop_yao_05"
+  }
+]
