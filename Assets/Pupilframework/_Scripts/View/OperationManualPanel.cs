@@ -1,4 +1,4 @@
-using PupilFramework.UI;
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -15,7 +15,7 @@ public class OperationManualPanel : BasePanel
 	protected override void Awake()
 	{
 		base.Awake();
-		RegisterBtnEvent("CloseButton",CloseButtonOnClickEvent);
+		RegisterBtnEvent("CloseButton", CloseButtonOnClickEvent);
 	}
 
 	private void CloseButtonOnClickEvent(GameObject go)

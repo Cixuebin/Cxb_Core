@@ -1,6 +1,4 @@
 using Http;
-using PupilFramework;
-using PupilFramework.UI;
 using ResEntity;
 using System;
 using System.Collections;
@@ -27,25 +25,25 @@ public class LoginPanel : BasePanel
 
 	protected override void RegisterMessage()
 	{
-		
-		
+
+
 	}
 
-	
+
 
 	protected override void Awake()
 	{
 		base.Awake();
 		//查找组件/添加点击事件
-		
+
 		getMobileButton = transform.FindRecursively("GetMobileCodeBtn").GetComponent<Button>();
 		getMobileButton.onClick.AddListener(GetMobileButtonClickEvent);
-		countdownTimeText= transform.FindRecursively("CountdownTimeText").GetComponent<TextMeshProUGUI>();
+		countdownTimeText = transform.FindRecursively("CountdownTimeText").GetComponent<TextMeshProUGUI>();
 		loginPanelTips = transform.FindRecursively("LoginPanelTips_Text").GetComponent<TMP_Text>();
 		UserPhoneInputField = transform.FindRecursively("UserPhoneInputField").GetComponent<TMP_InputField>();
 		MobileCodeInputField = transform.FindRecursively("MobileCodeInputField").GetComponent<TMP_InputField>();
-		loginAndRegisterButton= transform.FindRecursively("LoginAndRegisterButton").GetComponent<Button>();
-		RegisterBtnEvent("LoginAndRegisterButton",LoginAndRegisterBtnOnClick);
+		loginAndRegisterButton = transform.FindRecursively("LoginAndRegisterButton").GetComponent<Button>();
+		RegisterBtnEvent("LoginAndRegisterButton", LoginAndRegisterBtnOnClick);
 		RegisterBtnEvent("CloseButton", CloseButtonOnClick);
 
 	}
@@ -64,7 +62,7 @@ public class LoginPanel : BasePanel
 		// 装载数据
 		user.phone = UserPhoneInputField.text;
 		user.mobileVerificationCode = MobileCodeInputField.text;
-		Debug.Log(user.phone+"--"+ user.password);
+		Debug.Log(user.phone + "--" + user.password);
 		// 发起登录请求
 		HttpRequest.Instance.PostRequest(SysConst.POST_USERLOGIN, user, LoginRequestRes);
 	}
@@ -76,14 +74,14 @@ public class LoginPanel : BasePanel
 		{
 			Debug.Log("登录/注册成功回调");
 			// Debug.LogError(JsonUtility.ToJson(data.data));
-			
+
 			// 请求成功，获取到 token
 			string token = data.data["token"].ToString();
 			// 记录 token
 			TokenUtils.setToken(token);
 			GameRoot.instance.UpdateUserLoginSatus();
 			UIManger.Instance.Pop();
-		
+
 			LoginSuccessful();
 		}
 		else
@@ -94,9 +92,9 @@ public class LoginPanel : BasePanel
 		loginPanelTips.text = data.msg;
 	}
 	//登录注册成功
-	public void LoginSuccessful() 
+	public void LoginSuccessful()
 	{
-	   
+
 	}
 	public override void OnEnter(object msg)
 	{
@@ -109,7 +107,7 @@ public class LoginPanel : BasePanel
 	//获取手机验证码
 	private void GetMobileButtonClickEvent()
 	{
-		Debug.Log("获取短信验证码,手机号:"+ UserPhoneInputField.text);
+		Debug.Log("获取短信验证码,手机号:" + UserPhoneInputField.text);
 		////本地测试倒计时
 		//getMobileButton.interactable = false;
 		//StartCoroutine(CountdownCoroutine());

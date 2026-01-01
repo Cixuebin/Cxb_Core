@@ -1,7 +1,4 @@
 
-
-using PupilFramework;
-using PupilFramework.UI;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;

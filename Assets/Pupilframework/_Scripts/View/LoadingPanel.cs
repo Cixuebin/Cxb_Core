@@ -1,7 +1,6 @@
 
 using DG.Tweening;
 using PupilFramework;
-using PupilFramework.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

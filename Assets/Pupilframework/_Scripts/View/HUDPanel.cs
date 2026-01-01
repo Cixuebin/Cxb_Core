@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using PupilFramework;
-using PupilFramework.UI;
 using UnityEngine;
 using UnityEngine.U2D;
 using UnityEngine.UI;

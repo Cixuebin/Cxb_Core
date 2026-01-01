@@ -1,5 +1,4 @@
 using System;
-using PupilFramework.UI;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
@@ -85,7 +84,7 @@ namespace StarterAssets
 				//inputActions.FindActionMap("Panel").Enable();
 			}
 
-		
+
 
 		}
 		/// <summary>

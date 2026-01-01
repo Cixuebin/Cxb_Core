@@ -1,7 +1,6 @@
 
 using Http;
 using PupilFramework;
-using PupilFramework.UI;
 using ResEntity;
 using System;
 using System.Collections;
