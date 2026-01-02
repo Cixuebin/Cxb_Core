@@ -383,6 +383,14 @@ PrefabInstance:
       propertyPath: ui_PlayerMoveAction
       value: 
       objectReference: {fileID: 1293510310829856970, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
+    - target: {fileID: -7515928010908142044, guid: 3c2a875d532e2f842812e6de7f8eabe9, type: 3}
+      propertyPath: player_FirstThirdSwitch
+      value: 
+      objectReference: {fileID: 8609241354664746803, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
+    - target: {fileID: -7515928010908142044, guid: 3c2a875d532e2f842812e6de7f8eabe9, type: 3}
+      propertyPath: player_MouseRightAction
+      value: 
+      objectReference: {fileID: 7313153842494671962, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
     - target: {fileID: 458959947824897499, guid: 3c2a875d532e2f842812e6de7f8eabe9, type: 3}
       propertyPath: m_ClearFlags
       value: 2

@@ -38,7 +38,7 @@ public class GameRoot : MonoBehaviour
     /// </summary>
     public void UpdateUserLoginSatus()
     {
-        HttpRequest.Instance.GetRequest(SysConst.GET_USERLOGINSTATE, GetStateCallback);
+        /// HttpRequest.Instance.GetRequest(SysConst.GET_USERLOGINSTATE, GetStateCallback);
     }
     private void GetStateCallback(ResData data)
     {

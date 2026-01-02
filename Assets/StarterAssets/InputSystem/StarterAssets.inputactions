@@ -50,6 +50,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Mouse_Right",
+                    "type": "Button",
+                    "id": "fd99ca85-66b5-45ef-a2cb-a4d56f3dfa02",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -294,6 +303,17 @@
                     "action": "Canel",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "812f1989-e4ab-4e7e-8993-c3448e808bc8",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mouse_Right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -481,6 +501,34 @@
                     "action": "PlayerMoveAction",
                     "isComposite": false,
                     "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "Function",
+            "id": "36904ab7-0487-4ce9-a0c3-241df0563071",
+            "actions": [
+                {
+                    "name": "FirstThirdSwitch",
+                    "type": "Button",
+                    "id": "56e619f8-0e42-46d2-8761-34df8698c964",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a2d557eb-6728-4d18-a245-c1280d5e2682",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FirstThirdSwitch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

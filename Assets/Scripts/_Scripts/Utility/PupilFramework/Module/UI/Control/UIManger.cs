@@ -170,8 +170,6 @@ public class UIManger : Singleton<UIManger>
         //如果栈内只有hud切面，并且不是关闭HUD，就停止出栈
         if (!isCloseHUD && _uiStack.Count == 1 && PeekStack().name == SysConst.ASSET_UI_HUDPANEL)
         {
-            MessageData messageData = new MessageData(SysConst.MVC_UI_POP, null);
-            MsgCenter.SendMessage(SysConst.MVC_UI, messageData);
             return;
         }
         BasePanel currentUI = PopStack();
@@ -182,11 +180,7 @@ public class UIManger : Singleton<UIManger>
         OperatorMask(upperLevelUI);
         //上一层级UI处理
         OperatorUpperLevelPop(currentUI, upperLevelUI, msg);
-        if (upperLevelUI.name == SysConst.ASSET_UI_HUDPANEL)
-        {
-            MessageData messageData = new MessageData(SysConst.MVC_UI_POP, null);
-            MsgCenter.SendMessage(SysConst.MVC_UI, messageData);
-        }
+      
     }
 
     /// <summary>

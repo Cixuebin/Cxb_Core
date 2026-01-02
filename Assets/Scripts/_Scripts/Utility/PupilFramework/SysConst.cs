@@ -65,15 +65,26 @@ public static class SysConst
     public const string MVC_LOADINGPANEL = "MVC_LoadingPanel";
     public const string MVC_LOADINGPANEL_UPDATEPRORESS = "MVC_LoadingPanel_UpdateProgress";
     public const string MVC_LOADINGPANEL_ENDPRORESS = "MVC_LoadingPanel_EndProgress";
+    //角色信息
+    public const string MVC_PLAYER = "MVC_PLAYER";
+    //移动
+    public const string MVC_PLAYER_MOVE = "MVC_PLAYER_MOVE";
+    //跳跃
+    public const string MVC_PLAYER_JUMP = "MVC_PLAYER_JUMP";
+    //冲刺
+    public const string MVC_PLAYER_SPRINT = "MVC_PLAYER_SPRINT";
+    //x旋转
+    public const string MVC_PLAYER_LOOK = "MVC_PLAYER_LOOK";
 
+    //功能
+    public const string MVC_FUNCTION = "MVC_FUNCTION";
     /// <summary>
-    /// UI信息
+    /// 第一、二、人称视角切换
     /// </summary>
-    public const string MVC_UI = "MVC_UI";
-    /// <summary>
-    /// ui出栈
-    /// </summary>
-    public const string MVC_UI_POP = "MVC_UI_POP";
+    public const string MVC_FUNCTION_FIRSTTHIRDSWITCH = "MVC_FUNCTION_FirstThirdSwitch";
+
+
+
 
     //用户信息改变
     public const string MVC_USERDATA = "MVC_USERDATA";
@@ -85,18 +96,5 @@ public static class SysConst
     #endregion
 
     //pos get
-    /// <summary>
-    /// 获取用户登录状态
-    /// </summary>
-    public const string GET_USERLOGINSTATE = "/unity/api/mate_community/user/getUserInfo";
 
-    /// <summary>
-    /// 用户登录.注册
-    /// </summary>
-    public const string POST_USERLOGIN = "/unity/api/mate_community/user/loginOrRegister";
-
-    /// <summary>
-    /// 获取手机验证码
-    /// </summary>
-    public const string POST_GETPHONECODE = "/unity/api/mate_community/user/pushPhoneRegisterSmsCode";
 }

@@ -99,12 +99,19 @@ public class PlyaerController : MonoBehaviour
 #endif
     private Animator _animator;            // 动画控制器
     private CharacterController _controller; // 角色控制器
-    public InputManger _input;    // 自定义输入管理器
+                                             //  public InputManger _input;    // 自定义输入管理器
     private GameObject _mainCamera;        // 主相机引用
 
     private const float _threshold = 0.01f; // 输入阈值（避免微小输入干扰）
 
     private bool _hasAnimator;             // 是否拥有动画控制器
+
+    private bool _isLocalJump = false;//是否跳跃
+    private bool _isSprint = false;
+    private Vector2 _move;//移动向量
+    private Vector2 _look;//旋转向量
+    public bool isFirstPerson = true;
+
 
     public CinemachineVirtualCamera _cinemachineVirtualCamera;
     public void ModifyShoulderOffset(Vector3 v3)
@@ -159,8 +166,55 @@ public class PlyaerController : MonoBehaviour
         {
             _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         }
-        ModifyShoulderOffset(new Vector3(0, 0, -4));
 
+        ModifyShoulderOffset(PerspectiveSwitching());
+        MsgCenter.AddMsgListener(SysConst.MVC_PLAYER, PlayerMsgHandler);
+        MsgCenter.AddMsgListener(SysConst.MVC_FUNCTION, FunctionMsgHandler);
+    }
+
+    private void FunctionMsgHandler(MessageData kv)
+    {
+        switch (kv.Key)
+        {
+            case SysConst.MVC_FUNCTION_FIRSTTHIRDSWITCH:
+                ModifyShoulderOffset(PerspectiveSwitching(true));
+                break;
+        }
+    }
+    private Vector3 PerspectiveSwitching(bool isSwitch = false)
+    {
+        if (isSwitch)
+        {
+            isFirstPerson = !isFirstPerson;
+        }
+        if (isFirstPerson)
+        {
+            return new Vector3(0, 0, 0f);
+        }
+        else
+        {
+            return new Vector3(0, 0.5f, -4f);
+        }
+
+    }
+    private void PlayerMsgHandler(MessageData kv)
+    {
+        switch (kv.Key)
+        {
+            case SysConst.MVC_PLAYER_MOVE:
+                _move = (Vector2)kv.Values;
+                break;
+            case SysConst.MVC_PLAYER_JUMP:
+                _isLocalJump = (bool)kv.Values;
+                break;
+            case SysConst.MVC_PLAYER_SPRINT:
+                _isSprint = (bool)kv.Values;
+                break;
+            case SysConst.MVC_PLAYER_LOOK:
+                _look = (Vector2)kv.Values;
+                _look *= 2;
+                break;
+        }
     }
 
     /// <summary>
@@ -176,7 +230,7 @@ public class PlyaerController : MonoBehaviour
 
         // 获取其他必要组件
         _controller = GetComponent<CharacterController>();
-        _input = FindObjectOfType<InputManger>();
+
 #if ENABLE_INPUT_SYSTEM
         //  _playerInput = GetComponent<PlayerInput>();
         _playerInput = FindObjectOfType<PlayerInput>();
@@ -258,15 +312,15 @@ public class PlyaerController : MonoBehaviour
     {
 
         // 如果有输入且相机位置未固定
-        if (_input.look.sqrMagnitude >= _threshold && !LockCameraPosition)
+        if (_look.sqrMagnitude >= _threshold && !LockCameraPosition)
         {
             Logger.LogError("相机视角移动");
             // 不要将鼠标输入乘以Time.deltaTime;
             float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
 
             // 更新相机目标的旋转角度
-            _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier;
-            _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier;
+            _cinemachineTargetYaw += _look.x * deltaTimeMultiplier;
+            _cinemachineTargetPitch += _look.y * deltaTimeMultiplier;
         }
 
         // 限制旋转角度，使值限定在360度内
@@ -284,19 +338,19 @@ public class PlyaerController : MonoBehaviour
     private void Move()
     {
         // 根据移动速度、冲刺速度和是否按下冲刺键设置目标速度
-        float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
+        float targetSpeed = _isSprint ? SprintSpeed : MoveSpeed;
 
         // 简化的加速和减速设计，易于移除、替换或迭代
 
         // 注意：Vector2的==运算符使用近似值，因此不会出现浮点误差问题，且比计算模长更高效
         // 如果没有输入，将目标速度设为0
-        if (_input.move == Vector2.zero) targetSpeed = 0.0f;
+        if (_move == Vector2.zero) targetSpeed = 0.0f;
 
         // 获取玩家当前水平速度
         float currentHorizontalSpeed = new Vector3(_controller.velocity.x, 0.0f, _controller.velocity.z).magnitude;
 
         float speedOffset = 0.1f;
-        float inputMagnitude = _input.analogMovement ? _input.move.magnitude : 1f;
+        float inputMagnitude = _move.magnitude;// _input.analogMovement? _input.move.magnitude : 1f;
 
         // 加速或减速到目标速度
         if (currentHorizontalSpeed < targetSpeed - speedOffset ||
@@ -320,11 +374,11 @@ public class PlyaerController : MonoBehaviour
         if (_animationBlend < 0.01f) _animationBlend = 0f;
 
         // 标准化输入方向
-        Vector3 inputDirection = new Vector3(_input.move.x, 0.0f, _input.move.y).normalized;
+        Vector3 inputDirection = new Vector3(_move.x, 0.0f, _move.y).normalized;
 
         // 注意：Vector2的!=运算符使用近似值，因此不会出现浮点误差问题，且比计算模长更高效
         // 如果有移动输入，在玩家移动时旋转玩家
-        if (_input.move != Vector2.zero)
+        if (_move != Vector2.zero)
         {
             // 计算目标旋转角度（相对于相机方向）
             _targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg +
@@ -377,7 +431,7 @@ public class PlyaerController : MonoBehaviour
             }
 
             // 跳跃处理
-            if (_input.jump && _jumpTimeoutDelta <= 0.0f)
+            if (_isLocalJump && _jumpTimeoutDelta <= 0.0f)
             {
                 // H * -2 * G的平方根 = 达到期望高度所需的速度
                 _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
@@ -415,7 +469,7 @@ public class PlyaerController : MonoBehaviour
             }
 
             // 如果未接地，则不能跳跃
-            _input.jump = false;
+            _isLocalJump = false;
         }
 
         // 如果低于终端速度，则随时间应用重力（乘以delta time两次以线性加速）

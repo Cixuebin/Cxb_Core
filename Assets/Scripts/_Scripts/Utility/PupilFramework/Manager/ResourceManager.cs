@@ -58,7 +58,7 @@ public class ResourceManager
     public static GameObject LoadUIAsset(string objName, Transform parent)
     {
         string tempPath = string.Concat(SceneManager.GetActiveScene().name, "/UIPrefab/", objName);
-
+        Debug.LogError("LoadUIAsset:" + tempPath);
         GameObject tempAsset = Resources.Load<GameObject>(tempPath);
         if (tempAsset == null)
         {

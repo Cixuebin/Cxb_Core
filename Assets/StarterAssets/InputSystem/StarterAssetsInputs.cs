@@ -29,21 +29,10 @@ namespace StarterAssets
 												// private InputActionMap playerMap; // Player 模块
 		void Awake()
 		{
-			MsgCenter.AddMsgListener(SysConst.MVC_UI, MvcOnCanel);
+
 		}
 
-		private void MvcOnCanel(MessageData kv)
-		{
-			switch (kv.Key)
-			{
-				case SysConst.MVC_UI_POP:
-					//本来不应该这么样处理，但是为了兼容，所以暂时这样，这个移动使用的是插件，理论应该将inputsystem分离出来，独立判断，而不是挂载到这个对象上面
-					GetComponent<PlayerInput>().SwitchCurrentActionMap("Player");
-					break;
-				default:
-					break;
-			}
-		}
+
 
 		void Start()
 		{

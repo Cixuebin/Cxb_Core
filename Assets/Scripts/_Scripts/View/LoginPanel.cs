@@ -64,7 +64,7 @@ public class LoginPanel : BasePanel
 		user.mobileVerificationCode = MobileCodeInputField.text;
 		Debug.Log(user.phone + "--" + user.password);
 		// 发起登录请求
-		HttpRequest.Instance.PostRequest(SysConst.POST_USERLOGIN, user, LoginRequestRes);
+		//HttpRequest.Instance.PostRequest(SysConst.POST_USERLOGIN, user, LoginRequestRes);
 	}
 	//登录注册的回调
 	private void LoginRequestRes(ResData data)
@@ -116,7 +116,7 @@ public class LoginPanel : BasePanel
 		// 装载数据
 		user.phone = UserPhoneInputField.text;
 		//暂时没有地址
-		HttpRequest.Instance.PostRequest(SysConst.POST_GETPHONECODE, user, GetPhoneCodeDataCallback);
+		//HttpRequest.Instance.PostRequest(SysConst.POST_GETPHONECODE, user, GetPhoneCodeDataCallback);
 	}
 	/// <summary>
 	/// 获取手机验证码

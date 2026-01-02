@@ -12,6 +12,7 @@ public class InputManger : MonoBehaviour
     public Vector2 look;        // 视角输入向量（鼠标或手柄右摇杆）
     public bool jump;           // 跳跃输入状态
     public bool sprint;         // 冲刺/奔跑输入状态
+    private bool _isMouseRightPressed;  // 鼠标右键按下
 
     [Header("移动设置")]
     public bool analogMovement; // 模拟移动开关（用于区分键盘和手柄输入）
@@ -21,6 +22,10 @@ public class InputManger : MonoBehaviour
     [SerializeField] private InputActionReference player_LookAction;
     [SerializeField] private InputActionReference player_JumpAction;
     [SerializeField] private InputActionReference player_SprintAction;
+    [SerializeField] private InputActionReference player_MouseRightAction;
+    //功能
+    //视角切换
+    [SerializeField] private InputActionReference player_FirstThirdSwitch;
 
     [SerializeField] private InputActionReference ui_panelOperationManualAction;
     [SerializeField] private InputActionReference ui_panelPersonalCenterAction;
@@ -48,6 +53,10 @@ public class InputManger : MonoBehaviour
             Logger.Log("Enable Sprint");
             player_SprintAction.action.Enable();
         }
+        if (player_MouseRightAction != null)
+            player_MouseRightAction.action.Enable();
+        if (player_FirstThirdSwitch != null)
+            player_FirstThirdSwitch.action.Enable();
         if (ui_panelOperationManualAction != null)
             ui_panelOperationManualAction.action.Enable();
         if (ui_panelPersonalCenterAction != null)
@@ -92,7 +101,15 @@ public class InputManger : MonoBehaviour
             player_SprintAction.action.canceled += OnPlayerSprintCanceled;
             Logger.Log("Binding Sprint actions");
         }
-
+        if (player_MouseRightAction != null)
+        {
+            player_MouseRightAction.action.performed += OnMouseRightPerformed;
+            player_MouseRightAction.action.canceled += OnMouseRightCanceled;
+        }
+        if (player_FirstThirdSwitch != null)
+        {
+            player_FirstThirdSwitch.action.performed += OnFirstThirdSwitchPerformed;
+        }
         // UI Actions
         if (ui_panelOperationManualAction != null)
             ui_panelOperationManualAction.action.performed += OnOperationManualPerformed;
@@ -101,6 +118,26 @@ public class InputManger : MonoBehaviour
         if (ui_PlayerMoveAction != null)
             ui_PlayerMoveAction.action.performed += OnPlayerMovePerformed;
     }
+
+    private void OnFirstThirdSwitchPerformed(InputAction.CallbackContext context)
+    {
+        MsgCenter.SendMessage(SysConst.MVC_FUNCTION, new MessageData(SysConst.MVC_FUNCTION_FIRSTTHIRDSWITCH, null));
+    }
+
+
+    private void OnMouseRightCanceled(InputAction.CallbackContext context)
+    {
+        Logger.Log("Mouse Right Canceled");
+        _isMouseRightPressed = false;
+    }
+
+
+    private void OnMouseRightPerformed(InputAction.CallbackContext context)
+    {
+        Logger.Log("Mouse Right Canceled");
+        _isMouseRightPressed = true;
+    }
+
 
     private void UnbindActionEvents()
     {
@@ -128,7 +165,11 @@ public class InputManger : MonoBehaviour
             player_SprintAction.action.started -= OnPlayerSprintStarted;
             player_SprintAction.action.canceled -= OnPlayerSprintCanceled;
         }
-
+        if (player_MouseRightAction != null)
+        {
+            player_MouseRightAction.action.performed -= OnMouseRightPerformed;
+            player_MouseRightAction.action.canceled -= OnMouseRightCanceled;
+        }
         // UI Actions
         if (ui_panelOperationManualAction != null)
             ui_panelOperationManualAction.action.performed -= OnOperationManualPerformed;
@@ -142,12 +183,14 @@ public class InputManger : MonoBehaviour
     private void OnPlayerMoveStarted(InputAction.CallbackContext context)
     {
         move = context.ReadValue<Vector2>();
+        MsgCenter.SendMessage(SysConst.MVC_PLAYER, new MessageData(SysConst.MVC_PLAYER_MOVE, move));
         //   Logger.Log("Move:Started ");
     }
 
     private void OnPlayerMovePerformed(InputAction.CallbackContext context)
     {
         move = context.ReadValue<Vector2>();
+        MsgCenter.SendMessage(SysConst.MVC_PLAYER, new MessageData(SysConst.MVC_PLAYER_MOVE, move));
         // Logger.Log("Move:Performed ");
 
     }
@@ -155,15 +198,17 @@ public class InputManger : MonoBehaviour
     private void OnPlayerMoveCanceled(InputAction.CallbackContext context)
     {
         move = Vector2.zero;
+        MsgCenter.SendMessage(SysConst.MVC_PLAYER, new MessageData(SysConst.MVC_PLAYER_MOVE, move));
         //Logger.Log("Move:Canceled");
     }
 
     // 玩家视角输入处理
     private void OnPlayerLookStarted(InputAction.CallbackContext context)
     {
-        if (Input.GetMouseButtonDown(1))
+        if (_isMouseRightPressed)
         {
             look = context.ReadValue<Vector2>();
+            MsgCenter.SendMessage(SysConst.MVC_PLAYER, new MessageData(SysConst.MVC_PLAYER_LOOK, look));
         }
 
     }
@@ -171,9 +216,10 @@ public class InputManger : MonoBehaviour
     private void OnPlayerLookPerformed(InputAction.CallbackContext context)
     {
         // look = context.ReadValue<Vector2>();
-        if (Input.GetMouseButton(1))
+        if (_isMouseRightPressed)
         {
             look = context.ReadValue<Vector2>();
+            MsgCenter.SendMessage(SysConst.MVC_PLAYER, new MessageData(SysConst.MVC_PLAYER_LOOK, look));
         }
         // look = context.ReadValue<Vector2>();
 
@@ -182,6 +228,7 @@ public class InputManger : MonoBehaviour
     private void OnPlayerLookCanceled(InputAction.CallbackContext context)
     {
         look = Vector2.zero;
+        MsgCenter.SendMessage(SysConst.MVC_PLAYER, new MessageData(SysConst.MVC_PLAYER_LOOK, look));
         //Logger.Log("Player Look Canceled: " + look);
     }
 
@@ -189,26 +236,27 @@ public class InputManger : MonoBehaviour
     private void OnPlayerJumpStarted(InputAction.CallbackContext context)
     {
         jump = true;
+        MsgCenter.SendMessage(SysConst.MVC_PLAYER, new MessageData(SysConst.MVC_PLAYER_JUMP, jump));
 
     }
 
     private void OnPlayerJumpCanceled(InputAction.CallbackContext context)
     {
         jump = false;
-
+        MsgCenter.SendMessage(SysConst.MVC_PLAYER, new MessageData(SysConst.MVC_PLAYER_JUMP, jump));
     }
 
     // 玩家冲刺输入处理
     private void OnPlayerSprintStarted(InputAction.CallbackContext context)
     {
         sprint = true;
-        Logger.Log("Sprint Started : " + sprint);
+        MsgCenter.SendMessage(SysConst.MVC_PLAYER, new MessageData(SysConst.MVC_PLAYER_SPRINT, sprint));
     }
 
     private void OnPlayerSprintCanceled(InputAction.CallbackContext context)
     {
         sprint = false;
-        Logger.Log("Sprint Canceled: " + sprint);
+        MsgCenter.SendMessage(SysConst.MVC_PLAYER, new MessageData(SysConst.MVC_PLAYER_SPRINT, sprint));
     }
 
     // 原有的UI相关方法
